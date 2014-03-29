@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>DaftarServlet</servlet-name>
+		<servlet-class>id.ac.unsyiah.jte.ds.mahasiswa.DaftarServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DaftarServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+    <servlet>
+        <servlet-name>TambahDataServlet</servlet-name>
+        <servlet-class>id.ac.unsyiah.jte.ds.mahasiswa.TambahDataServlet</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>TambahDataServlet</servlet-name>
+        <url-pattern>/tambah</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateDataServlet</servlet-name>
+        <servlet-class>id.ac.unsyiah.jte.ds.mahasiswa.UpdateDataServlet</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>UpdateDataServlet</servlet-name>
+        <url-pattern>/ubah</url-pattern>
+    </servlet-mapping>
+      <servlet>
+        <servlet-name>HapusDataServlet</servlet-name>
+        <servlet-class>id.ac.unsyiah.jte.ds.mahasiswa.HapusDataServlet</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>HapusDataServlet</servlet-name>
+        <url-pattern>/hapus</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
